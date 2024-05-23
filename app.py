@@ -32,8 +32,7 @@ data['Dato for smagning'] = pd.to_datetime(data['Dato for smagning'], dayfirst=T
 
 data["Age"] = data["Dato for smagning"].dt.year - data["Årgang"]
 
-data = data.drop('Jens rating', axis=1)
-
+data = data.drop(['Jens rating'], axis=1)
 
 # Set up the Streamlit app
 st.title("CSV Data Dashboard")
@@ -55,14 +54,14 @@ user_input = st.number_input('Vis top n vine:', min_value=0, max_value=len(data)
 group_by_column = st.selectbox('Hvem vil du vise top n for?', ["Gns. rating", "Jonna rating", "Bergman rating", "Barfoed rating", "Kasper rating", "John Rating"])
 
 top_n = data.nlargest(user_input, group_by_column)
-exclude_cols = ["Gns. rating", "Vin nr", "Mousserende", "Jens rating", "John Rating", "Jonna rating", "Bergman rating", "Kasper rating", "Barfoed rating", "Dato for smagning"]
+exclude_cols = ["Gns. rating", "Vin nr", "Mousserende", "John Rating", "Jonna rating", "Bergman rating", "Kasper rating", "Barfoed rating", "Dato for smagning"]
 #data.columns.difference(exclude_cols)
 exclude_cols.remove(group_by_column)
 st.write(top_n.drop(columns=exclude_cols))
 
 # Mean rating group by
 st.subheader("Mean rating grouped by selected column")
-exclude_cols = [rating_col, "Arrangør", "Barfoed rating", "Bergman rating", "Jonna rating", "Jens rating", "Kasper rating", "John Rating", "Flaske", "Mousserende", "Pris", "Vin nr", "Age"]
+exclude_cols = [rating_col, "Arrangør", "Barfoed rating", "Bergman rating", "Jonna rating", "Kasper rating", "John Rating", "Flaske", "Mousserende", "Pris", "Vin nr", "Age"]
 group_by_column = st.selectbox('Select column to group by', data.columns.difference(exclude_cols), index=2)
 
 grouped_df = data.groupby(group_by_column)[rating_col].agg(['mean', 'std']).reset_index()
@@ -79,7 +78,7 @@ ax.set_title(f'Mean Rating by {group_by_column}')
 st.pyplot(fig)
 
 # Scatter plot for any two selected columns
-numeric_columns = ["Jens rating", "Bergman rating", "Jonna rating", "John Rating", "Kasper rating", "Gns. rating", "Pris", "Vin nr", "Årgang", "Age"]
+numeric_columns = ["Bergman rating", "Jonna rating", "John Rating", "Kasper rating", "Gns. rating", "Pris", "Vin nr", "Årgang", "Age"]
 st.subheader("Scatter Plot")
 x_axis = st.selectbox("Select X-axis", numeric_columns)
 y_axis = st.selectbox("Select Y-axis", numeric_columns)
