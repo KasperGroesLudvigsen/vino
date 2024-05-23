@@ -32,6 +32,9 @@ data['Dato for smagning'] = pd.to_datetime(data['Dato for smagning'], dayfirst=T
 
 data["Age"] = data["Dato for smagning"].dt.year - data["Årgang"]
 
+data = data.drop('Jens rating', axis=1)
+
+
 # Set up the Streamlit app
 st.title("CSV Data Dashboard")
 st.write("This dashboard highlights some interesting aspects of the data.")
