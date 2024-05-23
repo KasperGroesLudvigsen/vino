@@ -1,0 +1,31 @@
+Vin nr,Producent ,Flaske,Årgang ,Land,Område/region,Primær drue,Farve,Mousserende,Jens rating ,Jonna rating ,Bergman rating,Barfoed rating ,Kasper rating ,John Rating,Gns. rating ,Pris,Dato for smagning,Arrangør
+1,La Rioja Alta ,904 Gran Reserva ,1994,Spanien,Rioja Alta,Tempranillo,Rød,Nej,51,48,52,72,98,N/A,64.2,925,9/4/2023,Kasper
+3,La Rioja Alta ,Vina Ardanza Reserva ,2009,Spanien,Rioja Alta,Tempranillo ,Rød,Nej,54,45,55,52,86,N/A,58.4,300,9/4/2023,Kasper
+4,La Rioja Alta ,Vina Ardanza Reserva ,2015,Spanien,Rioja Alta,Tempranillo ,Rød,Nej,50,72,63,68,80,N/A,66.6,210,9/4/2023,Kasper
+2,Bodegas Faustino ,Faustino I Gran Reserva ,2011,Spanien ,Rioja Alavesa ,Tempranillo,Rød,Nej,30,66,53,57,60,N/A,53.2,100,9/4/2023,Kasper
+5,Sandra Bravos ,Sierra de Tolono - Tempranillo ,2020,Spanien ,Rioja Alavesa ,Tempranillo ,Rød,Nej,44,67,68,58,80,N/A,63.4,165,9/4/2023,Kasper
+6,MacRobert and Canals,Laventura,2019,Spanien ,Rioja Baja,Garnacha ,Rød,Nej,55,70,75,60,82,N/A,68.4,185,9/4/2023,Kasper
+1,The Fableist,437 Malbec,2018,USA,Central Coast,Malbec,Rød,Nej,N/A,84,47,93,45,N/A,67.25,189,1/7/2023,Christian
+2,Caleuche,Caleuche Malbec Reserve,2019,Chile,Maule,Malbec,Rød,Nej,N/A,74,51,70,24,N/A,54.75,79,1/7/2023,Christian
+3,Ch. les Croisille,Les Pierre,2018,Frankrig,Cahors,Malbec,Rød,Nej,N/A,76,55,85,76,N/A,73,199,1/7/2023,Christian
+4,Ch. les Croisille,Le Croizillon,2016,Frankrig,Cahors,Malbec,Rød,Nej,N/A,72,51,75,78,N/A,69,95,1/7/2023,Christian
+5,Martino,Martino Superiore Malbec,2017,Argentina,Mendoza,Malbec,Rød,Nej,N/A,82,71,84,47,N/A,71,179,1/7/2023,Christian
+6,Catena Zapata,Catena Zapata Argentino,2020,Argentina,Mendoza,Malbec,Rød,Nej,N/A,76,80,73,56,N/A,71.25,695,1/7/2023,Christian
+7,Bodega Chacra,Roka,2020,Argentina,Patagonia,Malbec,Rød,Nej,N/A,73,47,53,57,N/A,57.5,350,1/7/2023,Christian
+8,Domaine de Mus,Mus,2020,Frankrig,Cahors,Malbec,Rød,Nej,N/A,74,55,70,61,N/A,65,99,1/7/2023,Christian
+1,Chanin Wine Company,N/A,2016,USA,Californien,Chardonnay ,Hvid,Nej,N/A,72,73,91,57,N/A,73.25,400,7/10/2023,Mathias
+2,Sandhi Vintners ,N/A,2021,USA,St. Rita Hills,Pinot Noir,Rød,Nej,N/A,69,89,72,65,N/A,73.75,350,7/10/2023,Mathias
+3,Caymus Vineyards ,N/A,2020,USA,Napa Valley ,Zinfandel ,Rød,Nej,N/A,78,65,62,75,N/A,70,370,7/10/2023,Mathias
+4,Joey Tensley ,Fundamental,2019,USA,Central Coast,Cabernet Sauvignon ,Rød,Nej,N/A,88,69,43,91,N/A,72.75,160,7/10/2023,Mathias
+5,Gloria Ferer ,Blanc de Noirs Rosé,Mixed,USA,Sonoma,Pinot Noir; Chardonnay ,Rosé,Ja,N/A,87,65,57,91,N/A,75,200,7/10/2023,Mathias
+1,Tenuta San Guido,Le Defiese,2021,Italien,Toscana,"Cabernet Sauvignon, Sangiovese",Rød,Nej,N/A,74,60,59,44,N/A,59.25,255,17/2/2024,Jonathan
+2,Juggernaut,Juggernaut Cabernet Sauvignon,2019,USA,Californien,Cabernet Sauvignon,Rød,Nej,N/A,86,78,82,82,N/A,82,300,17/2/2024,Jonathan
+3,Bernard Magrez,Bleu de Mers,2021,Frankrig,Pays d'Oc,Cabernet Sauvignon,Rød,Nej,N/A,45,53,42,29,N/A,42.25,120,17/2/2024,Jonathan
+4,Submission,Submission Cabernet Sauvignon,2019,USA,Napa Valley ,Cabernet Sauvignon,Rød,Nej,N/A,91,70,66,27,N/A,63.5,140,17/2/2024,Jonathan
+5,Château Potensac,Chateau Pontesac,2020,Frankrig,Bordeaux,"Cabernet Sauvignon, Merlot",Rød,Nej,N/A,78,48,40,74,N/A,60,230,17/2/2024,Jonathan
+6,Frank Phélan,Saint Estephan,2018,Frankrig,Bordeaux,"Cabernet Sauvignon, Merlot",Rød,Nej,N/A,83,73,35,68,N/A,64.75,300,17/2/2024,Jonathan
+1,Biondi Santi,Tenuta Greppo,2010,Italien,Montalcino,Sangiovese,Rød,Nej,N/A,70,60,82,73,50,67,1200,18/5/2024,Kasper
+2,Poggio di Sotto,Vendemmia,2018,Italien,Montalcino,Sangiovese,Rød,Nej,N/A,82,82,67,39,52,64.4,550,18/5/2024,Kasper
+3,Altesino,Brunello Di Montalcino,2019,Italien,Montalcino,Sangiovese,Rød,Nej,N/A,58,77,73,68,71,69.4,230,18/5/2024,Kasper
+4,Sensi,Dal Campo,2020,Italien,Chianti,Sangiovese,Rød,Nej,N/A,72,84,71,70,83,76,100,18/5/2024,Kasper
+5,Casanova di Neri,Tenuta Nuova,2015,Italien,Montalcino,Sangiovese,Rød,Nej,N/A,70,55,70,86,69,70,850,18/5/2024,Kasper
