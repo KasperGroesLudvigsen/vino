@@ -60,7 +60,7 @@ st.write(top_n.drop(columns=exclude_cols))
 # Mean rating group by
 st.subheader("Mean rating grouped by selected column")
 exclude_cols = [rating_col, "Arrangør", "Barfoed rating", "Bergman rating", "Jonna rating", "Jens rating", "Kasper rating", "John Rating", "Flaske", "Mousserende", "Pris", "Vin nr", "Age"]
-group_by_column = st.selectbox('Select column to group by', data.columns.difference(exclude_cols))
+group_by_column = st.selectbox('Select column to group by', data.columns.difference(exclude_cols), index=2)
 
 grouped_df = data.groupby(group_by_column)[rating_col].agg(['mean', 'std']).reset_index()
 
