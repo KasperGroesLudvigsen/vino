@@ -78,7 +78,7 @@ ax.set_title(f'Mean Rating by {group_by_column}')
 st.pyplot(fig)
 
 # Scatter plot for any two selected columns
-numeric_columns = ["Bergman rating", "Jonna rating", "John Rating", "Kasper rating", "Gns. rating", "Pris", "Vin nr", "Årgang", "Age"]
+numeric_columns = ["Bergman rating", "Jonna rating", "John Rating", "Barfoed rating", "Kasper rating", "Gns. rating", "Pris", "Vin nr", "Årgang", "Age"]
 st.subheader("Scatter Plot")
 x_axis = st.selectbox("Select X-axis", numeric_columns)
 y_axis = st.selectbox("Select Y-axis", numeric_columns)
