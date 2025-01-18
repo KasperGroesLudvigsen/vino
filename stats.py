@@ -25,3 +25,5 @@ if p_value < 0.05:
     print("There is a significant difference between earlier and later wine ratings.")
 else:
     print("There is no significant difference between earlier and later wine ratings.")
+
+## >>> There is no significant difference between earlier and later wine ratings.
