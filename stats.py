@@ -59,3 +59,4 @@ else:
     effect_size_interpretation = "large"
 
 print(f"Effect size interpretation: {effect_size_interpretation}")
+### Effect size interpretation: small
