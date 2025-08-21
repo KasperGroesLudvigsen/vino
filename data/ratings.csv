@@ -1,7 +1,55 @@
-Producent ,Flaske,Årgang ,Land,Område/region,Primær drue,Farve,Mousserende,Pris,Bemærkning
-Domaine Karanika,Cuvee speciale,2023,Grækenland,Amyntaio,Xinomavro,Hvid,Ja,299,Bland de blanc. Druen sammenlignes med nebbiolo
-Panagiotis,Sant'or,2023,Grækenland,Peloponesse,Rofitis,Hvid,Nej,215,Halvø
-Iliana Malihin Winery,Old Vine Vidiano -Rhea,2022,Grækenland,"Rethymno, Kreta",Vidiano,Hvid,Nej,479,Kreta.
-Halkia Wines,Agiorgitiko,2024,Grækenland,"Nemea, Peloponesse",Agiorgitiko,Rød,Nej,196,Ståltank. 5 dages maceration. 
-Sclavos,Monambeles,2020,Grækenland,"Lixouria, Kefalonia",Mavrodaphne,Rød,Nej,269,12 måneder på frisk egetræ.
-Economou Estate,Mirabello,2015,Grækenland,"Sitia, Kreta","Liatiko, mandilari",Rød,Nej,599,akin to a blend of Pinot Noir and Nebbiolo
+Vin nr,Producent ,Flaske,Årgang ,Land,Område/region,Primær drue,Farve,Mousserende,Jonna rating ,Bergman rating,Barfoed rating ,Kasper rating ,Christoffer rating,Gns. rating ,Pris,Dato for smagning,Arrangør
+1,La Rioja Alta ,904 Gran Reserva ,1994,Spanien,Rioja Alta,Tempranillo,Rød,Nej,48,52,72,98,N/A,67.5,925,9/4/2023,Kasper
+3,La Rioja Alta ,Vina Ardanza Reserva ,2009,Spanien,Rioja Alta,Tempranillo ,Rød,Nej,45,55,52,86,N/A,59.5,300,9/4/2023,Kasper
+4,La Rioja Alta ,Vina Ardanza Reserva ,2015,Spanien,Rioja Alta,Tempranillo ,Rød,Nej,72,63,68,80,N/A,70.75,210,9/4/2023,Kasper
+2,Bodegas Faustino ,Faustino I Gran Reserva ,2011,Spanien ,Rioja Alavesa ,Tempranillo,Rød,Nej,66,53,57,60,N/A,59,100,9/4/2023,Kasper
+5,Sandra Bravos ,Sierra de Tolono - Tempranillo ,2020,Spanien ,Rioja Alavesa ,Tempranillo ,Rød,Nej,67,68,58,80,N/A,68.25,165,9/4/2023,Kasper
+6,MacRobert and Canals,Laventura,2019,Spanien ,Rioja Baja,Garnacha ,Rød,Nej,70,75,60,82,N/A,71.75,185,9/4/2023,Kasper
+1,The Fableist,437 Malbec,2018,USA,Central Coast,Malbec,Rød,Nej,84,47,93,45,N/A,67.25,189,1/7/2023,Christian
+2,Caleuche,Caleuche Malbec Reserve,2019,Chile,Maule,Malbec,Rød y,Nej,74,51,70,24,N/A,54.75,79,1/7/2023,Christian
+3,Ch. les Croisille,Les Pierre,2018,Frankrig,Cahors,Malbec,Rød,Nej,76,55,85,76,N/A,73,199,1/7/2023,Christian
+4,Ch. les Croisille,Le Croizillon,2016,Frankrig,Cahors,Malbec,Rød,Nej,72,51,75,78,N/A,69,95,1/7/2023,Christian
+5,Martino,Martino Superiore Malbec,2017,Argentina,Mendoza,Malbec,Rød,Nej,82,71,84,47,N/A,71,179,1/7/2023,Christian
+6,Catena Zapata,Catena Zapata Argentino,2020,Argentina,Mendoza,Malbec,Rød,Nej,76,80,73,56,N/A,71.25,695,1/7/2023,Christian
+7,Bodega Chacra,Roka,2020,Argentina,Patagonia,Malbec,Rød,Nej,73,47,53,57,N/A,57.5,350,1/7/2023,Christian
+8,Domaine de Mus,Mus,2020,Frankrig,Cahors,Malbec,Rød,Nej,74,55,70,61,N/A,65,99,1/7/2023,Christian
+1,Chanin Wine Company,N/A,2016,USA,Californien,Chardonnay ,Hvid,Nej,72,73,91,57,N/A,73.25,400,7/10/2023,Mathias
+2,Sandhi Vintners ,N/A,2021,USA,St. Rita Hills,Pinot Noir,Rød,Nej,69,89,72,65,N/A,73.75,350,7/10/2023,Mathias
+3,Caymus Vineyards ,N/A,2020,USA,Napa Valley ,Zinfandel ,Rød,Nej,78,65,62,75,N/A,70,370,7/10/2023,Mathias
+4,Joey Tensley ,Fundamental,2019,USA,Central Coast,Cabernet Sauvignon ,Rød,Nej,88,69,43,91,N/A,72.75,160,7/10/2023,Mathias
+5,Gloria Ferer ,Blanc de Noirs Rosé,Mixed,USA,Sonoma,Pinot Noir; Chardonnay ,Rosé,Ja,87,65,57,91,N/A,75,200,7/10/2023,Mathias
+1,Tenuta San Guido,Le Defiese,2021,Italien,Toscana,"Cabernet Sauvignon, Sangiovese",Rød,Nej,74,60,59,44,N/A,59.25,255,17/2/2024,Jonathan
+2,Juggernaut,Juggernaut Cabernet Sauvignon,2019,USA,Californien,Cabernet Sauvignon,Rød,Nej,86,78,82,82,N/A,82,300,17/2/2024,Jonathan
+3,Bernard Magrez,Bleu de Mers,2021,Frankrig,Pays d'Oc,Cabernet Sauvignon,Rød,Nej,45,53,42,29,N/A,42.25,120,17/2/2024,Jonathan
+4,Submission,Submission Cabernet Sauvignon,2019,USA,Napa Valley ,Cabernet Sauvignon,Rød,Nej,91,70,66,27,N/A,63.5,140,17/2/2024,Jonathan
+5,Château Potensac,Chateau Pontesac,2020,Frankrig,Bordeaux,"Cabernet Sauvignon, Merlot",Rød,Nej,78,48,40,74,N/A,60,230,17/2/2024,Jonathan
+6,Frank Phélan,Saint Estephan,2018,Frankrig,Bordeaux,"Cabernet Sauvignon, Merlot",Rød,Nej,83,73,35,68,N/A,64.75,300,17/2/2024,Jonathan
+1,Biondi Santi,Tenuta Greppo,2010,Italien,Montalcino,Sangiovese,Rød,Nej,70,60,82,73,N/A,71.25,1200,18/5/2024,Kasper
+2,Poggio di Sotto,Vendemmia,2018,Italien,Montalcino,Sangiovese,Rød,Nej,82,82,67,39,N/A,67.5,550,18/5/2024,Kasper
+3,Altesino,Brunello Di Montalcino,2019,Italien,Montalcino,Sangiovese,Rød,Nej,58,77,73,68,N/A,69,230,18/5/2024,Kasper
+4,Sensi,Dal Campo,2020,Italien,Chianti,Sangiovese,Rød,Nej,72,84,71,70,N/A,74.25,100,18/5/2024,Kasper
+5,Casanova di Neri,Tenuta Nuova,2015,Italien,Montalcino,Sangiovese,Rød,Nej,70,55,70,86,N/A,70.25,850,18/5/2024,Kasper
+1,Petes Pure,Pete's Pure Shiraz - Rosé ,2023,Australien,South Eastern Australia,Shiraz,Rosé,Nej,61,42,73,15,N/A,47.75,129,14/09/2024,Christian
+2,Kaesler,Kaesler Semillon - Old Vine,2021,Australien,Barossa Valley,Semillon,Hvid,Nej,71,50,72,47,N/A,60,209,14/09/2024,Christian
+3,Jim Barry,Watervale Riesling,2022,Australien,Clare Valley,Riesling,Hvid,Nej,73,55,61,53,N/A,60.5,179,14/09/2024,Christian
+4,Penfolds,Penfolds Bin 150 Marananga,2017,Australien,Barossa Valley,Shiraz,Rød,Nej,73,64,64,74,N/A,68.75,439,14/09/2024,Christian
+5,Mount Mary,Mount Mary Pinot Noir,2020,Australien,Yarra Valley,Pinot Noir,Rød,Nej,84,83,71,67,N/A,76.25,999,14/09/2024,Christian
+6,Mollydooker,Carnival of Love,2018,Australien,McLaren Vale,Shiraz,Rød,Nej,80,81,58,64,N/A,70.75,400,14/09/2024,Christian
+7,Rosewood,Old Vine Muscat,Mixed,Australien,Rutherglen,Muscat,Dessert,Nej,77,70,79,70,N/A,74,259,14/09/2024,Christian
+1,Nyetimber,Classic Cuvee,Non-vintage,England,West Chiltington,"Chardonnay, Pinot Noir, Pinot Meunier",Sparkling,Ja,76,71,83,78,N/A,77,455,11/01/2025,Mathias
+2,Ruffino,Modus,2021,Italien,Toscana,Sangiovese,Rød,Nej,73,85,72,64,N/A,73.5,316,11/01/2025,Mathias
+3,Sena,Valle de Aconcagua Vina Sena,2016,Chile,Santiago,Cabernet Sauvignon,Rød,Nej,67,68,67,83,N/A,71.25,1500,11/01/2025,Mathias
+4,Roger Sabon,Chateauneuf-du-pape,2021,Frankrig,Vaucluse,"Syrah, Grenache, Mourvedre",Rød,Nej,60,62,63,38,N/A,55.75,255,11/01/2025,Mathias
+5,Duorum,Port,2018,Portugal,Duoro Valley,Blend,Portvin,Nej,53,82,71,45,N/A,62.75,350,11/01/2025,Mathias
+1,Domaine Karanika,Cuvee speciale,2023,Grækenland,Amyntaio,Xinomavro,Hvid,Ja,82,77,84,83,N/A,81.5,299,09/08/2025,Kasper
+2,Panagiotis,Sant'or,2023,Grækenland,Peloponesse,Rofitis,Hvid,Nej,59,58,48,66,N/A,57.75,215,09/08/2025,Kasper
+3,Iliana Malihin Winery,Old Vine Vidiano -Rhea,2022,Grækenland,"Rethymno, Kreta",Vidiano,Hvid,Nej,66,79,61,73,N/A,69.75,479,09/08/2025,Kasper
+4,Halkia Wines,Agiorgitiko,2024,Grækenland,"Nemea, Peloponesse",Agiorgitiko,Rød,Nej,84,80,38,79,N/A,70.25,196,09/08/2025,Kasper
+5,Sclavos,Monambeles,2020,Grækenland,"Lixouria, Kefalonia",Mavrodaphne,Rød,Nej,90,79,54,72,N/A,73.75,269,09/08/2025,Kasper
+6,Economou Estate,Mirabello,2015,Grækenland,"Sitia, Kreta","Liatiko, mandilari",Rød,Nej,84,70,88,86,N/A,82,599,09/08/2025,Kasper
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,#NAME?,,,,,,,,,,,,,,
