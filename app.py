@@ -14,23 +14,19 @@ rating_col = 'Gns. rating'
 # Change in mean ratings over time?
 # Correlation between vintage and rating
 
-# Load the CSV file
-#@st.cache_data 
-#def load_data():
-#    return pd.read_csv("data/ratings.csv")
+SHEET_URL = "https://docs.google.com/spreadsheets/d/17E648xm_EVEAnR5T1L1yvaHGcwabgqNJAgmjg5klGuE/export?format=csv"
 
-#data = load_data()
-data = pd.read_csv("data/ratings.csv")
+@st.cache_data(ttl=3600)
+def load_data():
+    df = pd.read_csv(SHEET_URL)
+    df = df.map(lambda x: x.strip() if isinstance(x, str) else x)
+    df.columns = df.columns.str.strip()
+    df["Årgang"] = pd.to_numeric(df["Årgang"], errors="coerce")
+    df["Dato for smagning"] = pd.to_datetime(df["Dato for smagning"], dayfirst=True)
+    df["Age"] = df["Dato for smagning"].dt.year - df["Årgang"]
+    return df
 
-data = data.applymap(lambda x: x.strip() if isinstance(x, str) else x)
-
-data.columns = data.columns.str.strip()
-
-data["Årgang"] = pd.to_numeric(data['Årgang'], errors="coerce")
-
-data['Dato for smagning'] = pd.to_datetime(data['Dato for smagning'], dayfirst=True)
-
-data["Age"] = data["Dato for smagning"].dt.year - data["Årgang"]
+data = load_data()
 
 
 # Set up the Streamlit app
