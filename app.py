@@ -174,3 +174,28 @@ for i, rater in enumerate(rater_cols):
     top = rater_data.dropna(subset=[rater]).nlargest(user_input, rater).reset_index(drop=True)
     col.write(f"**{rater.replace(' rating', '')}**")
     col.dataframe(top)
+
+# --- Top 3 favorite grapes per rater ---
+st.subheader("Top 3 favorite grapes")
+grape_col = "Primær drue"
+selected_rater = st.selectbox(
+    "Select person",
+    rater_cols,
+    format_func=lambda c: c.replace(" rating", ""),
+)
+rater_grape = data[[grape_col, selected_rater]].copy()
+rater_grape[selected_rater] = pd.to_numeric(rater_grape[selected_rater], errors="coerce")
+top_grapes = (
+    rater_grape.dropna(subset=[selected_rater])
+    .groupby(grape_col)[selected_rater]
+    .mean()
+    .nlargest(3)
+    .reset_index()
+)
+top_grapes.columns = ["Grape", "Mean rating"]
+fig, ax = plt.subplots()
+ax.barh(top_grapes["Grape"], top_grapes["Mean rating"])
+ax.set_xlabel("Mean rating")
+ax.set_title(f"{selected_rater.replace(' rating', '')}'s top 3 grapes")
+ax.invert_yaxis()
+st.pyplot(fig)
