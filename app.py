@@ -111,11 +111,40 @@ for col in rater_cols:
 trend = trend_df.groupby("Dato for smagning")[rater_cols].mean().reset_index()
 melted_trend = trend.melt(id_vars="Dato for smagning", var_name="Rater", value_name="Mean rating")
 melted_trend["Rater"] = melted_trend["Rater"].str.replace(" rating", "", regex=False)
+overall = trend_df.groupby("Dato for smagning")[rater_cols].mean().mean(axis=1).reset_index(name="Mean rating")
+overall = overall.dropna().sort_values("Dato for smagning")
+
 fig, ax = plt.subplots()
-sns.lineplot(data=melted_trend, x="Dato for smagning", y="Mean rating", hue="Rater", marker="o", ax=ax)
+sns.lineplot(data=melted_trend, x="Dato for smagning", y="Mean rating", hue="Rater", marker="o", alpha=0.5, ax=ax)
+ax.plot(
+    overall["Dato for smagning"],
+    overall["Mean rating"],
+    color="black",
+    linewidth=2.5,
+    marker="o",
+    label="Average across raters",
+)
+
+# Linear regression on the panel average to show the long-term direction
+x_days = (overall["Dato for smagning"] - overall["Dato for smagning"].min()).dt.days.values
+slope, intercept = np.polyfit(x_days, overall["Mean rating"].values, 1)
+ax.plot(
+    overall["Dato for smagning"],
+    slope * x_days + intercept,
+    color="black",
+    linestyle="--",
+    linewidth=1.5,
+    label="Linear trend",
+)
+
 plt.xticks(rotation=20, ha="right")
 ax.set_xlabel("")
+ax.legend(fontsize="small")
 st.pyplot(fig)
+direction = "up" if slope > 0 else "down"
+st.caption(
+    f"The panel average is trending {direction} by {abs(slope) * 365:.1f} rating points per year."
+)
 
 # --- Price vs. average rating ---
 st.subheader("Price vs. average rating")
@@ -165,7 +194,7 @@ st.write(f"{sig.capitalize()} order effect (p = {p_value:.3f}). Cohen's d = {coh
 
 # --- Top N wines per rater ---
 st.subheader("Top wines per rater")
-display_cols = ["Producent", "Flaske", "Årgang", "Land"]
+display_cols = ["Producent", "Flaske", "Årgang", "Land", "Primær drue"]
 cols = st.columns(3)
 for i, rater in enumerate(rater_cols):
     col = cols[i % 3]
@@ -199,3 +228,29 @@ ax.set_xlabel("Mean rating")
 ax.set_title(f"{selected_rater.replace(' rating', '')}'s top 3 grapes")
 ax.invert_yaxis()
 st.pyplot(fig)
+
+# --- Country and grape frequency across all tastings ---
+st.subheader("Country and grape frequency")
+st.write("How often each country and grape has appeared across all tastings.")
+country_col = "Land"
+freq_n = st.number_input(
+    "Vis top n lande/druer:", min_value=1, max_value=50, value=10, step=1, format="%d"
+)
+
+freq_cols = st.columns(2)
+for col, column_name, title, plural in (
+    (freq_cols[0], country_col, "Country", "countries"),
+    (freq_cols[1], grape_col, "Grape", "grapes"),
+):
+    counts = data[column_name].dropna().value_counts().nlargest(freq_n)
+    fig, ax = plt.subplots()
+    ax.barh(counts.index.astype(str), counts.values)
+    ax.invert_yaxis()
+    ax.set_xlabel("Number of wines")
+    ax.set_title(f"Most tasted by {title.lower()}")
+    ax.xaxis.set_major_locator(plt.MaxNLocator(integer=True))
+    col.pyplot(fig)
+    col.caption(
+        f"{data[column_name].nunique()} distinct {plural} across "
+        f"{len(data[column_name].dropna())} wines."
+    )
